@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Tailwind and daisyUi cdn link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="h-screen flex items-center justify-center flex-col">
+      <h1 class="text-6xl font-bold text-center mb-10">Rock Paper Scissors</h1>
+      <div
+        class="container mx-auto flex flex-col items-center border-2 border-amber-400 p-10 rounded-lg max-w-3xl"
+      >
+        <div class="flex items-center gap-8">
+          <button
+            class="size-32 border-4 rounded-full flex items-center justify-center"
+          >
+            <img class="w-20 -mt-3" src="./images/rock.png" alt="rock" />
+          </button>
+          <button
+            class="size-32 border-4 rounded-full flex items-center justify-center"
+          >
+            <img class="w-20" src="./images/paper.png" alt="rock" />
+          </button>
+          <button
+            class="size-32 border-4 rounded-full flex items-center justify-center"
+          >
+            <img class="w-20" src="./images/scissors.png" alt="rock" />
+          </button>
+        </div>
+        <h3 class="text-3xl font-bold mt-14">win</h3>
+        <!-- win lose -->
+        <div class="flex items-center gap-14 mt-14">
+          <div class="flex items-center">
+            <p class="text-3xl font-bold font-serif -mb-6">You</p>
+            <img class="w-20" src="./images/rock.png" alt="" />
+          </div>
+          <div class="flex items-center">
+            <img class="w-20" src="./images/scissors.png" alt="" />
+            <p class="text-3xl font-bold font-serif -mb-6">Computer</p>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <p class="text-2xl font-medium">
+            Wins: <span>0</span>, Losses: <span>0</span>, Ties: <span>0</span>
+          </p>
+        </div>
+        <button
+          class="capitalize btn btn-wide btn-lg mt-8 btn-outline btn-warning"
+        >
+          reset score
+        </button>
+      </div>
+    </section>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
